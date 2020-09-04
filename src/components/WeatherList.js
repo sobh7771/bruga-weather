@@ -30,7 +30,7 @@ const WeatherList = () => {
 							const locations = str.split(',');
 
 							const newLocations = locations.filter(
-								(location) => location != weatherItem.id
+								(location) => +location !== weatherItem.id
 							);
 
 							console.log(weatherItem.id, locations);
